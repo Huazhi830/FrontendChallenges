@@ -1,0 +1,19 @@
+body {
+  font-family: 'Karla', sans-serif;
+}
+
+main {
+  background-color: hsl(256, 26%, 20%);
+}
+
+footer {
+  background-color: hsl(0, 0%, 98%);
+}
+
+h2,h3 {
+  font-family: 'DM Serif Display', serif;
+}
+
+.white-text {
+  color: #fff;
+}
