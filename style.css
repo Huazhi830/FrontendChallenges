@@ -1,8 +1,19 @@
 body {
   font-family: 'Karla', sans-serif;
+  color: hsl(270, 9%, 17%);
+  margin: 0;
+}
+
+header {
+  position: fixed;
+  background-color: #fff;
+  width: 100%;
+  z-index: 3;
 }
 
 main {
+  position: relative;
+  top: 70px;
   background-color: hsl(256, 26%, 20%);
 }
 
@@ -10,10 +21,143 @@ footer {
   background-color: hsl(0, 0%, 98%);
 }
 
-h2,h3 {
+h2,
+h3 {
   font-family: 'DM Serif Display', serif;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
 }
 
 .white-text {
   color: #fff;
+}
+
+/* header */
+
+.logo {
+  margin: 1.5rem;
+}
+
+.menuToggle {
+  position: relative;
+  user-select: none;
+  float: right;
+  margin: 14px;
+}
+
+.menuToggle ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menuToggle li {
+  display: inline-block;
+  text-transform: uppercase;
+  padding: 10px;
+  letter-spacing: 0.1em;
+}
+
+.menu-btn a {
+  display: block;
+  color: hsl(273, 4%, 51%);
+}
+
+.menu-btn a:hover {
+  color: hsl(270, 9%, 17%);
+}
+
+.View-plans-btn a {
+  border: 1px solid hsl(270, 9%, 17%);
+  text-transform: uppercase;
+  padding: 0.5rem 1.5rem;
+}
+
+.View-plans-btn a:hover {
+  background-color: hsl(270, 9%, 17%);
+  color: #fff;
+  border: 1px solid hsl(270, 9%, 17%);
+  cursor: pointer;
+}
+
+.menuToggle input {
+  display: none;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  margin: 0;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 2;
+}
+
+.menuToggle input:checked~img {
+  content: url("images/icon-close.svg");
+}
+
+.menuToggle img {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+
+  #menu {
+    display: none;
+    width: 335px;
+    height: 420px;
+    right: -19px;
+    top: 51px;
+    position: absolute;
+    background-color: hsl(270, 9%, 17%);
+    text-align: center;
+    padding: 20px;
+  }
+
+  .bg-pattern {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+
+  .menuToggle {
+    margin: 19px;
+  }
+
+  .menuToggle img {
+    display: block;
+    float: right;
+  }
+
+  .menuToggle input {
+    display: block;
+    float: right;
+  }
+
+  .menuToggle li {
+    display: block;
+    padding: 15px;
+  }
+
+  .menuToggle li:hover {
+    border: 1px solid #FFF;
+  }
+
+  .View-plans-btn {
+    border: 1px solid #FFF;
+  }
+
+  .menuToggle a {
+    color: #fff;
+  }
+
+  .menu-btn a:hover {
+    color: #fff;
+  }
+
+  .menuToggle input:checked~#menu {
+    display: block;
+  }
 }

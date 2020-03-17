@@ -26,24 +26,28 @@
     }
   </style>
 </head>
+
 <body>
 
   <header>
-    <div id="logo">
-      <img src="images/logo.svg" alt="logo">
-    </div>
-    <nav>
-      <input type="checkbox" id="hamburger" />
-      <img src="images/icon-hamburger.svg" alt="icon-hamburger">
-      <ul>
-        <li><a href="#">How we work</a>
-        <li><a href="#">Blog</a>
-        <li><a href="#">Account</a>
-        <li><a href="#">View plans</a>
-      </ul>
+    <nav id="nav">
+      <a href="#">
+        <img class="logo" src="images/logo.svg" alt="logo">
+      </a>
+      <div class="menuToggle">
+        <input type="checkbox" id="hamburger" />
+        <img src="images/icon-hamburger.svg" alt="icon-hamburger">
+        <ul id="menu">
+          <li class="menu-btn"><a href="#">How we work</a></li>
+          <li class="menu-btn"><a href="#">Blog</a></li>
+          <li class="menu-btn"><a href="#">Account</a></li>
+          <li class="View-plans-btn"><a href="#">View plans</a></li>
+          <img class="bg-pattern" src="images/bg-pattern-mobile-nav.svg" alt="">
+        </ul>
+      </div>
     </nav>
   </header>
-  <main  class="white-text"role="main">
+  <main class="white-text" role="main">
     <article>
       <h2>Humanizing your insurance.</h2>
       <p>Get your life insurance coverage easier and faster. We blend our expertise
