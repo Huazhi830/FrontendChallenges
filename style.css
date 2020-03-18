@@ -11,6 +11,10 @@ header {
   z-index: 3;
 }
 
+nav {
+  height: 70px;
+}
+
 main {
   position: relative;
   top: 70px;
@@ -38,7 +42,12 @@ a {
 /* header */
 
 .logo {
-  margin: 1.5rem;
+  display: inline-block;
+  height: 100%;
+}
+
+.logo img {
+  margin: 26px;
 }
 
 .menuToggle {
@@ -72,6 +81,7 @@ a {
 
 .View-plans-btn a {
   border: 1px solid hsl(270, 9%, 17%);
+  color: hsl(270, 9%, 17%);
   text-transform: uppercase;
   padding: 0.5rem 1.5rem;
 }
