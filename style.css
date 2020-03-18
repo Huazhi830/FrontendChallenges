@@ -457,3 +457,76 @@ a.main-btn:hover {
     content: url("images/bg-pattern-how-we-work-mobile.svg");
   }
 }
+
+/* footer */
+
+.bg-footer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 50%;
+}
+
+#account hr {
+  border-top: 1px solid hsl(273, 4%, 51%);
+  margin-top: 40px;
+}
+
+.social-icon {
+  float: right;
+}
+
+.social-icon a {
+  padding: 0 5px;
+}
+
+#account .card {
+  width: 25%;  
+  text-transform: uppercase;
+}
+
+#account .card h4{
+  color: hsl(273, 4%, 51%);  
+}
+
+#account .card a {
+  display: block;
+  color: hsl(270, 9%, 17%);
+  font-weight: 700;
+  line-height: 2em;
+}
+
+#account .card a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 765px) {
+
+  .social-logo {
+    display: block;
+    padding-top: 100px;
+  }
+
+  .social-icon {
+    float: none;
+    margin-top: 40px;
+  }
+
+  #account .card-group {
+    margin-top: 20px;  
+  }
+
+  #account .card {
+    width: 100%;  
+  }
+
+  #account hr {
+    width: 80%;  
+  }
+
+  .bg-footer {
+    content: url("images/bg-pattern-footer-mobile.svg");
+    width: 100%;
+    height: unset;
+  }
+}
