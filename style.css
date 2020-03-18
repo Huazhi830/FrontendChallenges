@@ -238,6 +238,12 @@ li.View-plans-btn {
   padding: 10px 30px;
 }
 
+#intro a:hover {
+  color: hsl(270, 9%, 17%);
+  border: 1px solid #fff;
+  background-color: #fff;
+}
+
 .intro-left-img {
   position: absolute;
   left: 0;
