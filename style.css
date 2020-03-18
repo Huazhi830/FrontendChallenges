@@ -13,12 +13,7 @@ header {
 
 nav {
   height: 70px;
-}
-
-main {
-  position: relative;
-  top: 70px;
-  background-color: hsl(256, 26%, 20%);
+  padding: 0 170px;
 }
 
 footer {
@@ -47,14 +42,14 @@ a {
 }
 
 .logo img {
-  margin: 26px;
+  margin: 26px 26px 26px 0;
 }
 
 .menuToggle {
   position: relative;
   user-select: none;
   float: right;
-  margin: 14px;
+  margin: 14px 0 14px 14px;
 }
 
 .menuToggle ul {
@@ -68,6 +63,10 @@ a {
   text-transform: uppercase;
   padding: 10px;
   letter-spacing: 0.1em;
+}
+
+li.View-plans-btn {
+  padding-right: 0;
 }
 
 .menu-btn a {
@@ -112,7 +111,15 @@ a {
   display: none;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1260px) {
+
+  nav {
+    padding:0;
+  }
+
+  .logo img {
+    margin-left: 70px;
+  }
 
   #menu {
     display: none;
@@ -133,7 +140,7 @@ a {
   }
 
   .menuToggle {
-    margin: 19px;
+    margin: 19px 70px;
   }
 
   .menuToggle img {
@@ -169,5 +176,152 @@ a {
 
   .menuToggle input:checked~#menu {
     display: block;
+  }
+}
+
+@media screen and (max-width: 765px) {
+  .menuToggle {
+    margin: 19px 20px;
+  }
+
+  .logo img {
+    margin-left: 20px;
+  }
+}
+
+/* intro main */
+
+#intro {
+  position: relative;
+  top: 70px;
+  background-color: hsl(256, 26%, 20%);
+  padding: 100px 170px;
+}
+
+#intro article {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 50%;
+  padding-right: 10px;
+}
+
+.intro-title {
+  font-size: 4.5rem;
+  line-height: 1em;
+}
+
+#intro .intro-img {
+  float: right;
+  width: 50%;
+}
+
+.intro-img img {
+  width: 100%;
+}
+
+#intro hr {
+  display: inline-block;
+  width: 170px;
+  border: 1px solid hsl(273, 4%, 51%);
+  margin-bottom: 50px;
+}
+
+#intro p {
+  line-height: 1.5em;
+  margin: 40px 0;
+}
+
+#intro a {
+  color: #fff;
+  border: 1px solid #fff;
+  text-transform: uppercase;
+  padding: 10px 30px;
+}
+
+.intro-left-img {
+  position: absolute;
+  left: 0;
+  bottom: -120px;
+}
+
+.intro-right-img {
+  position: absolute;
+  right: 0;
+  top: -50px;
+}
+
+@media screen and (max-width: 1260px) {
+  #intro {
+    padding: 70px;
+  }
+
+  .intro-img img{
+    content: url("images/image-intro-mobile.jpg");
+  }
+
+  .intro-title {
+    font-size: 4rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  #intro {
+    padding: 30px;
+  }
+
+  .intro-title {
+    font-size: 3rem;
+  }
+}
+
+  .intro-left-img {
+    width: 10%;
+  }
+
+  .intro-right-img {
+    width: 20%;
+  }
+
+@media screen and (max-width: 765px) {
+  #intro {
+    padding: 0;
+    text-align: center;
+    display: flex;    
+    flex-direction: column;
+  }
+
+  #intro article {
+    position: relative;
+    padding: 150px 20px;
+    width: 100%;
+    order: 2;
+  }
+
+  #intro hr {
+    display: none;
+  }
+
+  #intro .intro-img {
+    width: 100%;
+    order: 1;
+  }
+
+  #intro img {
+  }
+
+  .intro-title {
+    font-size: 3rem;
+  }
+
+  .intro-left-img {
+    content: url("images/bg-pattern-intro-left-mobile.svg");
+    top: 0;
+    width: 50%;
+  }
+
+  .intro-right-img {
+    content: url("images/bg-pattern-intro-right-mobile.svg");
+    width: 30%;
+    top: 350px;
   }
 }
