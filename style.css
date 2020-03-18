@@ -4,6 +4,14 @@ body {
   margin: 0;
 }
 
+main,
+section,
+footer {
+  position: relative;
+  top: 70px;
+  padding: 100px 170px;
+}
+
 header {
   position: fixed;
   background-color: #fff;
@@ -32,6 +40,63 @@ a {
 
 .white-text {
   color: #fff;
+}
+
+.text {
+  line-height: 1.5em;
+  margin: 40px 0;
+}
+
+.title {
+  font-size: 4.5rem;
+  line-height: 1em;
+}
+
+.short-hr {
+  display: inline-block;
+  width: 170px;
+  border: 1px solid hsl(273, 4%, 51%);
+  margin-bottom: 50px;
+}
+
+@media screen and (max-width: 1260px) {
+
+  main,
+  section,
+  footer {
+    padding: 70px;
+  }
+
+  .title {
+    font-size: 4rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  main,
+  section,
+  footer {
+    padding: 30px;
+  }
+
+  .title {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 765px) {
+  main,
+  section,
+  footer {
+    padding: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .title {
+    font-size: 3rem;
+  }
 }
 
 /* header */
@@ -114,7 +179,7 @@ li.View-plans-btn {
 @media screen and (max-width: 1260px) {
 
   nav {
-    padding:0;
+    padding: 0;
   }
 
   .logo img {
@@ -192,10 +257,7 @@ li.View-plans-btn {
 /* intro main */
 
 #intro {
-  position: relative;
-  top: 70px;
   background-color: hsl(256, 26%, 20%);
-  padding: 100px 170px;
 }
 
 #intro article {
@@ -205,11 +267,6 @@ li.View-plans-btn {
   padding-right: 10px;
 }
 
-.intro-title {
-  font-size: 4.5rem;
-  line-height: 1em;
-}
-
 #intro .intro-img {
   float: right;
   width: 50%;
@@ -217,18 +274,6 @@ li.View-plans-btn {
 
 .intro-img img {
   width: 100%;
-}
-
-#intro hr {
-  display: inline-block;
-  width: 170px;
-  border: 1px solid hsl(273, 4%, 51%);
-  margin-bottom: 50px;
-}
-
-#intro p {
-  line-height: 1.5em;
-  margin: 40px 0;
 }
 
 #intro a {
@@ -247,55 +292,46 @@ li.View-plans-btn {
 .intro-left-img {
   position: absolute;
   left: 0;
-  bottom: -120px;
+  bottom: -300px;
 }
 
 .intro-right-img {
   position: absolute;
   right: 0;
-  top: -50px;
+  top: -100px;
 }
 
 @media screen and (max-width: 1260px) {
-  #intro {
-    padding: 70px;
-  }
 
-  .intro-img img{
+  .intro-img img {
     content: url("images/image-intro-mobile.jpg");
   }
 
-  .intro-title {
-    font-size: 4rem;
+  .intro-left-img {
+    width: 20%;
+    bottom: -300px;
+  }
+
+  .intro-right-img {
+    width: 30%;
+    top: -100px;
   }
 }
 
 @media screen and (max-width: 900px) {
-  #intro {
-    padding: 30px;
-  }
-
-  .intro-title {
-    font-size: 3rem;
-  }
-}
-
   .intro-left-img {
     width: 10%;
+    bottom: -120px;
   }
 
   .intro-right-img {
     width: 20%;
+    top: -50px;
   }
+}
 
 @media screen and (max-width: 765px) {
-  #intro {
-    padding: 0;
-    text-align: center;
-    display: flex;    
-    flex-direction: column;
-  }
-
+  
   #intro article {
     position: relative;
     padding: 150px 20px;
@@ -312,13 +348,6 @@ li.View-plans-btn {
     order: 1;
   }
 
-  #intro img {
-  }
-
-  .intro-title {
-    font-size: 3rem;
-  }
-
   .intro-left-img {
     content: url("images/bg-pattern-intro-left-mobile.svg");
     top: 0;
@@ -329,5 +358,49 @@ li.View-plans-btn {
     content: url("images/bg-pattern-intro-right-mobile.svg");
     width: 30%;
     top: 350px;
+  }
+}
+
+/* how we work section */
+
+#how-we-work {
+  padding-top: 320px;
+}
+
+#how-we-work h3 {
+  margin-top: 20px;
+  font-size: 2rem;
+}
+
+.card-group {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.card {  
+  box-sizing: border-box;
+  width: 33%;
+  padding: 10px;
+}
+
+#how-we-work .text {
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 1260px) {
+  #how-we-work {
+    padding-top: 100px;
+  }
+}
+
+@media screen and (max-width: 765px) {
+  .card-group {
+    flex-direction: column;
+  }
+
+  .card {
+    width: 100%;
+    padding: 20px;
   }
 }
