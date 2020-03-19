@@ -36,6 +36,11 @@ a {
   text-decoration: none;
 }
 
+a,p,h2,h3,h4,hr {
+  position: relative;
+  z-index: 2;
+}
+
 .white-text {
   color: #fff;
 }
@@ -274,7 +279,6 @@ li.View-plans-btn {
   border: 1px solid #fff;
   text-transform: uppercase;
   padding: 10px 30px;
-  z-index: 2;
 }
 
 a.main-btn:hover {
